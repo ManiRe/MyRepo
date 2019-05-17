@@ -22,4 +22,7 @@ public class Test {
 	 public static boolean hasValidValue(Object field) {
 	        return field != null && !field.toString().trim().isEmpty() && !field.toString().trim().equals("null");
 	    }
+	 public static boolean isListEmpty(List<?> dataList) {
+	        return null == dataList || dataList.isEmpty();
+	    }
 }
