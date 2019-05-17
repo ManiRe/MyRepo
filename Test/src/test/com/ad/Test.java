@@ -25,4 +25,7 @@ public class Test {
 	 public static boolean isListEmpty(List<?> dataList) {
 	        return null == dataList || dataList.isEmpty();
 	    }
+	 public static boolean isNull(String checkString) {
+	        return null == checkString || checkString.trim().length() == 0 || checkString.trim().equalsIgnoreCase("null");
+	    }
 }
