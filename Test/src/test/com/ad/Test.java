@@ -8,8 +8,10 @@ import java.util.TimeZone;
 public class Test {
 
 	public static void main(String[] args) {
+		String s = "";
 		System.out.println("fd : "+getIsoFormattedStringFromDateTime(new Date()));
 		getIsoFormattedStringFromDateTime(new Date());
+		isNotNull(s);
 
 	}
 	public static String getIsoFormattedStringFromDateTime(Date date) {
@@ -36,4 +38,6 @@ public class Test {
 	 public static boolean isValidString(String checkString) {
 	        return null != checkString && checkString.trim().length() != 0;
 	    }
+	
+	
 }
