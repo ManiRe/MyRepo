@@ -18,4 +18,8 @@ public class Test {
         df.setTimeZone(tz);
         return df.format(date);
     }
+	
+	 public static boolean hasValidValue(Object field) {
+	        return field != null && !field.toString().trim().isEmpty() && !field.toString().trim().equals("null");
+	    }
 }
