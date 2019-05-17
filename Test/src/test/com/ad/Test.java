@@ -28,4 +28,8 @@ public class Test {
 	 public static boolean isNull(String checkString) {
 	        return null == checkString || checkString.trim().length() == 0 || checkString.trim().equalsIgnoreCase("null");
 	    }
+	 
+	 public static boolean isNotNull(String checkString) {
+	        return null != checkString && checkString.trim().length() != 0 && !checkString.trim().equalsIgnoreCase("null");
+	    }
 }
